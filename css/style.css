@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 3% 6%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-item {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list-item:first-child {
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-icon {
+  transform: scale(0.7);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav-button {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  padding: 3px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #616161;
+  border-radius: 15px;
+  border: 3px solid #000000;
+}
+
+.hero-container {
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  z-index: -1;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+.globe {
+  position: absolute;
+  left: 50%;
+  transform: scale(0.8);
+}
+
+.star {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  transform: scale(0.8);
+}
+
+.star2 {
+  position: absolute;
+  left: 40%;
+  bottom: 18%;
+  transform: scale(0.6);
+}
+
+img[alt="person-hero-image"] {
+  padding-top: 35px;
+  height: 70%;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 60px;
+}
+
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 40px 80px 80px 80px;
+  text-align: center;
+}
+
+.button-email {
+  font-family: "Orbitron", sans-serif;
+  background-color: transparent;
+  padding: 3px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #616161;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  margin-right: 10px;
+}
+
+.button-join {
+  font-family: "Orbitron", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.contact-heading {
+  margin-top: 90px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+  text-transform: capitalize;
+}
+
+.icons {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.icons img {
+  height: 40px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 2% 3%;
+  }
+  .list-item {
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 500;
+  }
+  .list-item:first-child {
+    font-size: 20px;
+  }
+  .hero-container *:nth-child(5) {
+    width: 40%;
+  }
+  img[alt="person-hero-image"] {
+    padding-top: 36px;
+    height: 50%;
+  }
+  .square {
+    left: 0;
+    top: 18%;
+  }
+  .square img {
+    height: 360px;
+  }
+  .globe {
+    left: 40%;
+    transform: scale(0.7);
+  }
+  .star {
+    right: 1%;
+    top: 7%;
+    transform: scale(0.7);
+  }
+  .star2 {
+    left: 40%;
+    bottom: 18%;
+    transform: scale(0.5);
+  }
+  .hero-container-right {
+    padding-top: 120px;
+    width: 600px;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .list {
+    display: none;
+  }
+  img[alt="brand-logo"] {
+    height: 40px;
+  }
+  .search-icon {
+    transform: scale(0.6);
+  }
+  .nav-button {
+    padding: 3px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .hero-container *:nth-child(5) {
+    width: 42%;
+  }
+  img[alt="person-hero-image"] {
+    height: 45%;
+  }
+  .square img {
+    height: 300px;
+  }
+  .hero-container-right {
+    padding-top: 90px;
+  }
+  .hero-heading {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+  .hero-container {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  img[alt="person-hero-image"] {
+    height: 500px;
+  }
+  .square img {
+    height: 400px;
+  }
+  .square {
+    left: 12%;
+    top: 19%;
+  }
+  .globe,
+  .star,
+  .star2 {
+    display: none;
+  }
+  .hero-container-right {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .hero-heading {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  img[alt="person-hero-image"] {
+    height: 380px;
+  }
+  .square img {
+    height: 340px;
+  }
+  .square {
+    left: 8%;
+    top: 14%;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+}
